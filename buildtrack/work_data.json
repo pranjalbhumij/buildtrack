@@ -1,0 +1,102 @@
+[
+    {
+        "id": "cf2e294b-a922-4710-b12f-1b01690e56a3",
+        "title": "Main Work 1",
+        "worker": {
+            "contactNumber": 1234567890,
+            "totalPayment": 1000,
+            "paid": 600,
+            "balance": 400
+        },
+        "budget": 1000,
+        "desc": "Initial phase of the project",
+        "subWorks": [
+            {
+                "id": "6c7b4754-e04a-4995-b50f-239919fc2da6",
+                "title": "Sub Work 1.1",
+                "worker": {
+                    "contactNumber": 9876543210,
+                    "totalPayment": 300,
+                    "paid": 300,
+                    "balance": 0
+                },
+                "budget": 300,
+                "desc": "Design UI screens",
+                "status": "Done",
+                "subWorks": null
+            },
+            {
+                "id": "d785ba48-d6bf-41d9-8c4a-34c54f7bc911",
+                "title": "Sub Work 1.2",
+                "worker": {
+                    "contactNumber": 1122334455,
+                    "totalPayment": 400,
+                    "paid": 200,
+                    "balance": 200
+                },
+                "budget": 400,
+                "desc": "Implement login functionality",
+                "status": "On Going",
+                "subWorks": [
+                    {
+                        "id": "49535b05-cdc8-4006-9711-2776d03ff6a1",
+                        "title": "Sub Work 1.2.1",
+                        "worker": {
+                            "contactNumber": 9988776655,
+                            "totalPayment": 100,
+                            "paid": 0,
+                            "balance": 100
+                        },
+                        "budget": 100,
+                        "desc": "Write unit tests",
+                        "status": "To Do",
+                        "subWorks": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "76b849a5-1dc9-4343-bbad-a5622b02a18c",
+        "title": "Main Work 2",
+        "worker": {
+            "contactNumber": 2233445566,
+            "totalPayment": 2000,
+            "paid": 1000,
+            "balance": 1000
+        },
+        "budget": 2000,
+        "desc": "Plan project execution",
+        "subWorks": [
+            {
+                "id": "bcab186b-65fc-4a23-b328-cbc054e1dfa4",
+                "title": "Sub Work 2.1",
+                "worker": {
+                    "contactNumber": 6677889900,
+                    "totalPayment": 500,
+                    "paid": 500,
+                    "balance": 0
+                },
+                "budget": 500,
+                "desc": "Collect requirements",
+                "status": "Done",
+                "subWorks": null
+            },
+            {
+                "id": "0e81d9bc-8879-49c2-876d-989eb33f469c",
+                "title": "Sub Work 2.2",
+                "worker": {
+                    "contactNumber": 3344556677,
+                    "totalPayment": 300,
+                    "paid": 120,
+                    "balance": 180
+                },
+                "budget": 300,
+                "desc": "Test app features",
+                "status": "On Going",
+                "subWorks": null
+            }
+        ]
+    }
+]
+
