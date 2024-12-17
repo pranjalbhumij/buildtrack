@@ -11,7 +11,7 @@ struct WorkDetailView: View {
     var work: Work
     
     var body: some View {
-        VStack (alignment: .leading) {
+        VStack {
             mainWorkView
             subWorksView
         }
@@ -25,15 +25,32 @@ struct WorkDetailView: View {
             ProgressView(value: work.progress)
                 .progressViewStyle(LinearProgressViewStyle())
         }
+        .padding()
     }
     
     var subWorksView: some View {
-        List {
-            ForEach(work.subWorks!) { work in
-                WorkRow(work: work)
+        Group {
+            if let subWorks = work.subWorks, !subWorks.isEmpty {
+                List {
+                    ForEach(subWorks) { subWork in
+                        ZStack {
+                            NavigationLink(value: subWork) {
+                                EmptyView()
+                            }
+                            .opacity(0)
+                            WorkRow(work: subWork)
+                        }
+                    }
+                }
+            } else {
+                Text("No sub-works available")
+                    .foregroundColor(.gray)
+                    .italic()
             }
         }
     }
+
+
 }
 
 #Preview {
