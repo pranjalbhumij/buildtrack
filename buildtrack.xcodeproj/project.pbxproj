@@ -18,6 +18,15 @@
 		D0B5A72A2D115E5400DE4850 /* WorkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5A7292D115E5400DE4850 /* WorkRow.swift */; };
 		D0B5A72C2D1162AD00DE4850 /* WorkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5A72B2D1162AD00DE4850 /* WorkViewModel.swift */; };
 		D0B5A72E2D119DDC00DE4850 /* WorkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5A72D2D119DDC00DE4850 /* WorkDetailView.swift */; };
+		D0B5A7302D129B8200DE4850 /* AddWorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5A72F2D129B8200DE4850 /* AddWorkView.swift */; };
+		D0B5A7352D12CF4400DE4850 /* WorkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5A7342D12CF4400DE4850 /* WorkRepository.swift */; };
+		D0B5A7372D12CFF600DE4850 /* CoreDataWorkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5A7362D12CFF600DE4850 /* CoreDataWorkRepository.swift */; };
+		D0B5A73A2D12D26200DE4850 /* WorkEntity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0B5A7382D12D26200DE4850 /* WorkEntity.xcdatamodeld */; };
+		D0B5A7452D12D70E00DE4850 /* WorkerEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5A7432D12D70E00DE4850 /* WorkerEntity+CoreDataClass.swift */; };
+		D0B5A7462D12D70E00DE4850 /* WorkerEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5A7442D12D70E00DE4850 /* WorkerEntity+CoreDataProperties.swift */; };
+		D0B5A7512D12E1C300DE4850 /* WorkEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5A74F2D12E1C300DE4850 /* WorkEntity+CoreDataClass.swift */; };
+		D0B5A7522D12E1C300DE4850 /* WorkEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5A7502D12E1C300DE4850 /* WorkEntity+CoreDataProperties.swift */; };
+		D0B5A7542D14231200DE4850 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5A7532D14231200DE4850 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +42,15 @@
 		D0B5A7292D115E5400DE4850 /* WorkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkRow.swift; sourceTree = "<group>"; };
 		D0B5A72B2D1162AD00DE4850 /* WorkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewModel.swift; sourceTree = "<group>"; };
 		D0B5A72D2D119DDC00DE4850 /* WorkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDetailView.swift; sourceTree = "<group>"; };
+		D0B5A72F2D129B8200DE4850 /* AddWorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkView.swift; sourceTree = "<group>"; };
+		D0B5A7342D12CF4400DE4850 /* WorkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkRepository.swift; sourceTree = "<group>"; };
+		D0B5A7362D12CFF600DE4850 /* CoreDataWorkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataWorkRepository.swift; sourceTree = "<group>"; };
+		D0B5A7392D12D26200DE4850 /* WorkEntity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkEntity.xcdatamodel; sourceTree = "<group>"; };
+		D0B5A7432D12D70E00DE4850 /* WorkerEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkerEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D0B5A7442D12D70E00DE4850 /* WorkerEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkerEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D0B5A74F2D12E1C300DE4850 /* WorkEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D0B5A7502D12E1C300DE4850 /* WorkEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D0B5A7532D14231200DE4850 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +106,9 @@
 		D0B5A71E2D114AA900DE4850 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D0B5A7332D12CF2500DE4850 /* UseCase */,
+				D0B5A7322D12CF1D00DE4850 /* CoreData */,
+				D0B5A7312D12CF1700DE4850 /* Repository */,
 				D0B5A7212D114AE400DE4850 /* Worker.swift */,
 				D0B5A7232D114B6700DE4850 /* Work.swift */,
 			);
@@ -108,8 +129,38 @@
 			children = (
 				D0B5A7292D115E5400DE4850 /* WorkRow.swift */,
 				D0B5A72D2D119DDC00DE4850 /* WorkDetailView.swift */,
+				D0B5A72F2D129B8200DE4850 /* AddWorkView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D0B5A7312D12CF1700DE4850 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D0B5A7342D12CF4400DE4850 /* WorkRepository.swift */,
+				D0B5A7362D12CFF600DE4850 /* CoreDataWorkRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		D0B5A7322D12CF1D00DE4850 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D0B5A7382D12D26200DE4850 /* WorkEntity.xcdatamodeld */,
+				D0B5A7432D12D70E00DE4850 /* WorkerEntity+CoreDataClass.swift */,
+				D0B5A7442D12D70E00DE4850 /* WorkerEntity+CoreDataProperties.swift */,
+				D0B5A74F2D12E1C300DE4850 /* WorkEntity+CoreDataClass.swift */,
+				D0B5A7502D12E1C300DE4850 /* WorkEntity+CoreDataProperties.swift */,
+				D0B5A7532D14231200DE4850 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D0B5A7332D12CF2500DE4850 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,10 +237,19 @@
 				D0B5A72E2D119DDC00DE4850 /* WorkDetailView.swift in Sources */,
 				D0B5A7132D114A9E00DE4850 /* ContentView.swift in Sources */,
 				D0B5A7222D114AE400DE4850 /* Worker.swift in Sources */,
+				D0B5A73A2D12D26200DE4850 /* WorkEntity.xcdatamodeld in Sources */,
+				D0B5A7542D14231200DE4850 /* CoreDataManager.swift in Sources */,
+				D0B5A7452D12D70E00DE4850 /* WorkerEntity+CoreDataClass.swift in Sources */,
+				D0B5A7462D12D70E00DE4850 /* WorkerEntity+CoreDataProperties.swift in Sources */,
 				D0B5A72C2D1162AD00DE4850 /* WorkViewModel.swift in Sources */,
 				D0B5A7262D11592B00DE4850 /* ModelData.swift in Sources */,
+				D0B5A7352D12CF4400DE4850 /* WorkRepository.swift in Sources */,
 				D0B5A72A2D115E5400DE4850 /* WorkRow.swift in Sources */,
+				D0B5A7372D12CFF600DE4850 /* CoreDataWorkRepository.swift in Sources */,
+				D0B5A7512D12E1C300DE4850 /* WorkEntity+CoreDataClass.swift in Sources */,
+				D0B5A7522D12E1C300DE4850 /* WorkEntity+CoreDataProperties.swift in Sources */,
 				D0B5A7112D114A9E00DE4850 /* buildtrackApp.swift in Sources */,
+				D0B5A7302D129B8200DE4850 /* AddWorkView.swift in Sources */,
 				D0B5A7242D114B6700DE4850 /* Work.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +464,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D0B5A7382D12D26200DE4850 /* WorkEntity.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D0B5A7392D12D26200DE4850 /* WorkEntity.xcdatamodel */,
+			);
+			currentVersion = D0B5A7392D12D26200DE4850 /* WorkEntity.xcdatamodel */;
+			name = WorkEntity.xcdatamodeld;
+			path = /Users/pranjalbhumij/Projects/buildtrack/buildtrack/Model/CoreData/WorkEntity.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D0B5A7052D114A9E00DE4850 /* Project object */;
 }

@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Worker: Decodable, Hashable {
-    var contactNumber: Int
-    var totalPayment: Int
-    var paid: Int
-    var balance: Int
+struct Worker: Codable, Hashable {
+    var contactNumber: Int32
+    var totalPayment: Int32
+    var paid: Int32
+    var balance: Int32
 }

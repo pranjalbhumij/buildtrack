@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct buildtrackApp: App {
+    let workViewModel: WorkViewModel
+    
+    init() {
+        let context = CoreDataManager.shared(containerName: "", dbPath: URL(string:"")!).context
+        let repository = CoreDataWorkRepository(context: context)
+        workViewModel = WorkViewModel(repository: repository)
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView(works: ModelData().works)
+            ContentView(viewModel: workViewModel)
         }
     }
 }

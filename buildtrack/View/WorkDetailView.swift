@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct WorkDetailView: View {
+    @ObservedObject var viewModel: SubWorkViewModel
     var work: Work
     
     var body: some View {
-        VStack {
+        VStack (alignment: .leading) {
             mainWorkView
             subWorksView
         }
@@ -19,20 +20,17 @@ struct WorkDetailView: View {
     
     var mainWorkView: some View {
         VStack (alignment: .leading) {
-            Text(work.title)
-            Text(work.status.rawValue)
-            Text(work.desc)
-            ProgressView(value: work.progress)
-                .progressViewStyle(LinearProgressViewStyle())
+            Text(work.title).font(.headline)
+            Text((work.desc ?? "").isEmpty ? "" : work.desc!).font(.subheadline)
         }
         .padding()
     }
     
     var subWorksView: some View {
         Group {
-            if let subWorks = work.subWorks, !subWorks.isEmpty {
+            if !viewModel.works.isEmpty {
                 List {
-                    ForEach(subWorks) { subWork in
+                    ForEach(viewModel.works) { subWork in
                         ZStack {
                             NavigationLink(value: subWork) {
                                 EmptyView()
@@ -53,6 +51,6 @@ struct WorkDetailView: View {
 
 }
 
-#Preview {
-    WorkDetailView(work: ModelData().works[0])
-}
+//#Preview {
+//    WorkDetailView(work: ModelData().works[0])
+//}

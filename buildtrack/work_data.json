@@ -10,6 +10,7 @@
         },
         "budget": 1000,
         "desc": "Initial phase of the project",
+        "createdOn": "2024-12-18 14:00:00",
         "subWorks": [
             {
                 "id": "6c7b4754-e04a-4995-b50f-239919fc2da6",
@@ -23,6 +24,7 @@
                 "budget": 300,
                 "desc": "Design UI screens",
                 "status": "Done",
+                "createdOn": "2024-12-18 14:00:00",
                 "subWorks": null
             },
             {
@@ -37,6 +39,7 @@
                 "budget": 400,
                 "desc": "Implement login functionality",
                 "status": "On Going",
+                "createdOn": "2024-12-18 14:00:00",
                 "subWorks": [
                     {
                         "id": "49535b05-cdc8-4006-9711-2776d03ff6a1",
@@ -50,6 +53,7 @@
                         "budget": 100,
                         "desc": "Write unit tests",
                         "status": "To Do",
+                        "createdOn": "2024-12-18 14:00:00",
                         "subWorks": null
                     }
                 ]
@@ -67,6 +71,7 @@
         },
         "budget": 2000,
         "desc": "Plan project execution",
+        "createdOn": "2024-12-18 14:00:00",
         "subWorks": [
             {
                 "id": "bcab186b-65fc-4a23-b328-cbc054e1dfa4",
@@ -80,6 +85,7 @@
                 "budget": 500,
                 "desc": "Collect requirements",
                 "status": "Done",
+                "createdOn": "2024-12-18 14:00:00",
                 "subWorks": null
             },
             {
@@ -94,6 +100,7 @@
                 "budget": 300,
                 "desc": "Test app features",
                 "status": "On Going",
+                "createdOn": "2024-12-18 14:00:00",
                 "subWorks": null
             }
         ]
